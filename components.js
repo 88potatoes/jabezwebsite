@@ -32,27 +32,27 @@ class Footer extends HTMLElement {
                 <div class="row">
                     <div class="col">
                         <div class="bg-secondary text-white p-2">
-                            <a href="./base.html">Content Policy</a>
+                            <a href="./base.html" class="nav-link">Content Policy</a>
                         </div>
                         <div class="bg-secondary text-white p-2">
-                            <a href="./base.html">Privacy Statement</a>
+                            <a href="./base.html" class="nav-link">Privacy Statement</a>
                         </div>
                         <div class="bg-secondary text-white p-2">
-                            <a href="./base.html">Cancellation Policy</a>
+                            <a href="./base.html" class="nav-link">Cancellation Policy</a>
                         </div>
                     </div>
                 </div>
                 <div class="row align-items-center">
                     <div class="col-4 ms-auto h-100 order-sm-1 d-flex align-items-center justify-content-center">
                         <ul class="d-flex w-100 justify-content-around h-100 align-items-center list-unstyled">
-                            <li><a href="https://www.facebook.com/"><i class="bi bi-facebook h3"></i></a></li>
-                            <li><a href="https://twitter.com/home?lang=en"><i class="bi bi-twitter h3"></i></a></li>
-                            <li><a href="https://www.instagram.com/"><i class="bi bi-instagram h3"></i></a></li>
+                            <li><a href="https://www.facebook.com/" class="nav-link"><i class="bi bi-facebook h3 m-0"></i></a></li>
+                            <li><a href="https://twitter.com/home?lang=en" class="nav-link"><i class="bi bi-twitter h3 m-0"></i></a></li>
+                            <li><a href="https://www.instagram.com/" class="nav-link"><i class="bi bi-instagram h3 m-0"></i></a></li>
                         </ul>
                     </div>
                     <div class="col-sm-8">
                         <div class="bg-primary text-white p-2 m-2">
-                            C JY Health
+                        © JY Health 2023
                         </div>
                     </div>
                     
