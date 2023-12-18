@@ -4,15 +4,15 @@ class Header extends HTMLElement {
         <nav class="navbar navbar-expand-sm container-fluid bg-info">
             <div class="container h-100 bg-warning d-flex align-items-center justify-content-center">
                 <div class="row w-100">
-                    <div class="col-8 text-white h1">
+                    <div class="col col-sm-8 text-white h1">
                         JY Health
                     </div>
-                    <nav class="navbar-nav col-4 collapse navbar-collapse align-items-center justify-content-end" id="navElements">
-                            <a href="./about.html" class="p-2 nav-link">About</a>
-                            <a href="./contact.html" class="p-2 nav-link">Contact</a>
-                            <a href="./servicelist.html" class="p-1 nav-link">Services</a>
+                    <nav class="justify-content-end text-center col col-sm-4 collapse navbar-collapse align-items-center" id="navElements">
+                        <a href="./about.html" class="p-2 nav-link">About</a>
+                        <a href="./contact.html" class="p-2 nav-link">Contact</a>
+                        <a href="./servicelist.html" class="p-2 nav-link">Services</a>
                     </nav>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navElements" aria-expanded="false" aria-controls="navElements" aria-expanded="false" aria-label="Toggle Navigation">
+                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navElements" aria-expanded="false" aria-controls="navElements" aria-expanded="false" aria-label="Toggle Navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 </div>
