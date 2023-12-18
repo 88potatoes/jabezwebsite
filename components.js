@@ -4,7 +4,7 @@ class Header extends HTMLElement {
         <nav class="navbar navbar-expand-sm container-fluid bg-info">
             <div class="container h-100 bg-warning d-flex align-items-center justify-content-center">
                 <div class="row w-100">
-                    <div class="col col-sm-8 text-white h1">
+                    <div class="col col-sm-8 text-white h1 mb-0">
                         JY Health
                     </div>
                     <nav class="justify-content-end text-center col col-sm-4 collapse navbar-collapse align-items-center" id="navElements">
