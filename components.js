@@ -1,22 +1,24 @@
 class Header extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-        <nav class="container-fluid h-5 bg-info" style="height: 5rem;">
+        <nav class="navbar navbar-expand-sm container-fluid bg-info">
             <div class="container h-100 bg-warning d-flex align-items-center justify-content-center">
                 <div class="row w-100">
-                    <div class="col-md-8 text-white">
-                        <h1>JY Health</h1>
+                    <div class="col-8 text-white h1">
+                        JY Health
                     </div>
-                    <div class="col">
-                        <div class="row align-items-center h-100 text-center">
-                            <div class="col-4"><a href="./about.html">About</a></div>
-                            <div class="col-4"><a href="./contact.html">Contact</a></div>
-                            <div class="col-4"><a href="./servicelist.html">Services</a></div>
-                        </div>
-                    </div>
+                    <nav class="navbar-nav col-4 collapse navbar-collapse align-items-center justify-content-end" id="navElements">
+                            <a href="./about.html" class="p-2 nav-link">About</a>
+                            <a href="./contact.html" class="p-2 nav-link">Contact</a>
+                            <a href="./servicelist.html" class="p-1 nav-link">Services</a>
+                    </nav>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navElements" aria-expanded="false" aria-controls="navElements" aria-expanded="false" aria-label="Toggle Navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                 </div>
             </div>
-        </nav>`;
+        </nav>`
+        ;
     }
 }
 
