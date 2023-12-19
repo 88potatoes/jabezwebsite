@@ -1,14 +1,14 @@
 class Header extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-        <nav class="navbar navbar-expand-sm container-fluid bg-primary">
+        <nav class="navbar navbar-dark navbar-expand-sm container-fluid bg-primary pt-6 shadow">
             <div class="container h-100 d-flex align-items-center justify-content-center">
                 <div class="row w-100">
                     <div class="col col-sm-8 text-white h1 mb-0">
                         JY Health
                     </div>
                     <nav class="justify-content-end text-center col col-sm-4 collapse navbar-collapse align-items-center" id="navElements">
-                        <a href="./about.html" class="p-2 nav-link text-white">About</a>
+                        <a href="./about.html" class="p-2 nav-link text-white shadow">About</a>
                         <a href="./contact.html" class="p-2 nav-link text-white">Contact</a>
                         <a href="./servicelist.html" class="p-2 nav-link text-white">Services</a>
                     </nav>
@@ -27,7 +27,7 @@ customElements.define("header-component", Header);
 class Footer extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-        <div class="container-fluid bg-primary">
+        <div class="container-fluid bg-primary shadow">
             <div class="container h-100">
                 <div class="row">
                     <div class="col">

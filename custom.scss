@@ -11,6 +11,7 @@ $info: #c8b0b4;
 $light: #f1d5d6;
 $dark: #151417;
 $white: #fcfbfb;
+$enable-shadows: true;
 
 $theme-colors: map-merge($theme-colors, (
   "primary": $primary,
@@ -22,5 +23,17 @@ $theme-colors: map-merge($theme-colors, (
   "info": $info
 ));
 
+html {
+    overflow:hidden;
+    height: 100%;
+}
+
+body {
+    overflow: auto;
+    height: 100%;
+}
+
 @import "./node_modules/bootstrap/scss/bootstrap";
 @import "../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+
+
