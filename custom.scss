@@ -1,2 +1,26 @@
+// Import Bootstrap functions
+@import "./node_modules/bootstrap/scss/functions";
+
+// Import Bootstrap variables
+@import "./node_modules/bootstrap/scss/variables";
+
+$primary: #2b282f;
+$secondary: #3b363e;
+$success: #006600;
+$info: #c8b0b4;
+$light: #f1d5d6;
+$dark: #151417;
+$white: #fcfbfb;
+
+$theme-colors: map-merge($theme-colors, (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "light": $light,
+  "dark": $dark,
+  "white": $white,
+  "info": $info
+));
+
 @import "./node_modules/bootstrap/scss/bootstrap";
 @import "../node_modules/bootstrap-icons/font/bootstrap-icons.css"
