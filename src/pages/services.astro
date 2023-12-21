@@ -1,5 +1,6 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro"
+import ServiceButton from "../components/ServiceButton.astro";
 ---
 
 <MainLayout>
@@ -8,47 +9,11 @@ import MainLayout from "../layouts/MainLayout.astro"
 </div>
 
 <div class="row justify-content-center g-3 ">
-    <div class="col-10 col-sm-6 col-md-4 ">
-        <a href="support_coordination.html" class="nav-link">
-            <div class="bg-primary text-white p-4 p-sm-5 mb-3 h5 text-center shadow pe-auto">
-                Support Coordination
-            </div>
-        </a>
-    </div>
-    <div class="col-10 col-sm-6 col-md-4">
-        <a href="daily_living_supports.html" class="nav-link">
-            <div class=" bg-primary text-white p-4 p-sm-5 mb-3 h5 text-center shadow">
-                Daily Living Supports
-            </div>
-        </a>
-    </div>
-    <div class="col-10 col-sm-6 col-md-4 ">
-        <a href="transportation.html" class="nav-link">
-            <div class="bg-primary text-white p-4 p-sm-5 mb-3 h5 text-center shadow">
-                Transportation
-            </div>
-        </a>
-    </div>
-    <div class="col-10 col-sm-6 col-md-4">
-        <a href="accommodations.html" class="nav-link">
-            <div class="bg-primary text-white p-4 p-sm-5 mb-3 h5 text-center shadow">
-                Accommodation and Tenancy
-            </div>
-        </a>
-    </div>
-    <div class="col-10 col-sm-6 col-md-4 ">
-        <a href="plan_management.html" class="nav-link">
-            <div class="bg-primary text-white p-4 p-sm-5 mb-3 h5 text-center shadow">
-                Plan Management
-            </div>
-        </a>
-    </div>
-    <div class="col-10 col-sm-6 col-md-4">
-        <a href="community_participation.html" class="nav-link">
-            <div class=" bg-primary text-white p-4 p-sm-5 mb-3 h5 text-center shadow">
-                Community Participation
-            </div>
-        </a>
-    </div>
+    <ServiceButton text="Support Coordination" link="/support_coordination"/>
+    <ServiceButton text="Accommodation and Tenancy Supports" link="/accommodations"/>
+    <ServiceButton text="Community Participation" link="/community_participation"/>
+    <ServiceButton text="Daily Living Supports" link="/daily_living_supports"/>
+    <ServiceButton text="Plan Management" link="/plan_management"/>
+    <ServiceButton text="Transportation" link="/transportation"/>  
 </div>
 </MainLayout>
