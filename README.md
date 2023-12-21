@@ -6,6 +6,5 @@ then run
 ```
 npm install
 npx sass custom.scss assets/bs_css.css --watch
+npm run start
 ```
-
-then you can run on liveserver
