@@ -10,6 +10,10 @@ body {
   height: 100%;
 }
 
+.content_stretch {
+  min-height: calc(100vh - 6rem);
+}
+
 /*!
  * Bootstrap  v5.3.2 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors

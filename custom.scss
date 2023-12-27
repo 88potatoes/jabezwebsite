@@ -33,6 +33,10 @@ body {
     height: 100%;
 }
 
+.content_stretch {
+  min-height: calc(100vh - 6rem)
+}
+
 @import "./node_modules/bootstrap/scss/bootstrap";
 @import "../node_modules/bootstrap-icons/font/bootstrap-icons.css"
 
