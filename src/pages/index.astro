@@ -14,10 +14,36 @@
         a {
             cursor: none;
         }
+
+        #mini-cursor {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            z-index: 51;
+            pointer-events: none;
+            position: absolute;
+            background-color: #f1d5d6;
+            transform: translate(-50%, -50%);
+            mix-blend-mode: difference;
+        }
+
+        #cursor {
+            background-color: white;
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            z-index: 50;
+            pointer-events: none;
+            mix-blend-mode: difference;
+            transition: top 0.1s, left 0.1s;
+            transform: translate(-50%, -50%);
+        }
     </style>
 </head>
 <body class="bg-white h-100 w-100 d-flex flex-column align-items-center justify-content-center position-relative">
     <div id="cursor"></div>
+    <div id="mini-cursor"></div>
 
     <div class="w-75 h-75 d-flex bg-secondary flex-column justify-content-center align-items-center shadow">
         <h1 class="bg-light shadow">JY</h1>
@@ -32,12 +58,15 @@
 
     <script>
         const cursor = document.getElementById("cursor")
-        console.log(cursor)
+        const minicursor = document.getElementById('mini-cursor')
         
         window.addEventListener('mousemove', (e) => {
             window.requestAnimationFrame(() => {
                 cursor.style.left = `${e.pageX}px`;
                 cursor.style.top = `${e.pageY}px`;
+                minicursor.style.left = `${e.pageX}px`;
+                minicursor.style.top = `${e.pageY}px`;
+
             });
         })
     </script>

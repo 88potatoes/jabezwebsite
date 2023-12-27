@@ -4,26 +4,8 @@ html {
   height: 100%;
 }
 
-body {
-  overflow: auto;
-  min-height: 130vh;
-}
-
 .content_stretch {
   min-height: calc(100vh - 6rem);
-}
-
-#cursor {
-  background-color: white;
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  z-index: 50;
-  pointer-events: none;
-  mix-blend-mode: difference;
-  transition: top 0.05s, left 0.05s;
-  transform: translate(-50%, -50%);
 }
 
 .mh {
