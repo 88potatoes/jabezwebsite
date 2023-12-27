@@ -26,7 +26,7 @@ $theme-colors: map-merge($theme-colors, (
 html {
   overflow:hidden;
   height: 100%;
-  cursor: none;
+  // cursor: none;
 
 
 }
@@ -37,11 +37,12 @@ body {
 }
 
 .content_stretch {
-  min-height: calc(100vh - 6rem)
+  min-height: calc(100vh - 6rem);
 }
 
 #cursor {
   background-color: white;
+  position: fixed;
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -49,11 +50,9 @@ body {
   pointer-events: none;
   mix-blend-mode: difference;
   transition: top 0.05s, left 0.05s;
+  transform: translate(-50%, -50%);
 }
 
-a {
-  cursor: none;
-}
 
 @import "./node_modules/bootstrap/scss/bootstrap";
 @import "../node_modules/bootstrap-icons/font/bootstrap-icons.css"

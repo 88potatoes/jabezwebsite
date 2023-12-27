@@ -6,17 +6,26 @@
     <link rel="stylesheet" href="assets/bs_css.css">
 
     <title>JY Support Services</title>
-</head>
-<body class="bg-light h-100 w-100 d-flex flex-column align-items-center justify-content-center position-relative">
-    <div id="cursor" class="position-absolute"></div>
+    <style>
+        html {
+            cursor: none;
+        }
 
-    <div class="w-75 h-75 d-flex bg-secondary flex-column justify-content-center align-items-center">
-        <h1 class="bg-light">JY</h1>
+        a {
+            cursor: none;
+        }
+    </style>
+</head>
+<body class="bg-white h-100 w-100 d-flex flex-column align-items-center justify-content-center position-relative">
+    <div id="cursor"></div>
+
+    <div class="w-75 h-75 d-flex bg-secondary flex-column justify-content-center align-items-center shadow">
+        <h1 class="bg-light shadow">JY</h1>
         <nav>
 
-            <div class="bg-light"><a href="/services" class="nav-link"><h2>Services</h2></a></div>
-            <div class="bg-light"><a href="/about" class="nav-link"><h2>About</h2></a></div>
-            <div class="bg-light"><a href="/contact" class="nav-link"><h2>Contact</h2></a></div>
+            <div class="bg-light shadow"><a href="/services" class="nav-link"><h2>Services</h2></a></div>
+            <div class="bg-light shadow"><a href="/about" class="nav-link"><h2>About</h2></a></div>
+            <div class="bg-light shadow"><a href="/contact" class="nav-link"><h2>Contact</h2></a></div>
         </nav>
 
     </div>
@@ -26,8 +35,10 @@
         console.log(cursor)
         
         window.addEventListener('mousemove', (e) => {
-            cursor.style.left = `${e.clientX - cursor.clientWidth / 2}px`;
-            cursor.style.top = `${e.clientY - cursor.clientHeight / 2}px`;
+            window.requestAnimationFrame(() => {
+                cursor.style.left = `${e.pageX}px`;
+                cursor.style.top = `${e.pageY}px`;
+            });
         })
     </script>
 </body>

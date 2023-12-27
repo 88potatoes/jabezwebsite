@@ -3,7 +3,6 @@
 html {
   overflow: hidden;
   height: 100%;
-  cursor: none;
 }
 
 body {
@@ -17,6 +16,7 @@ body {
 
 #cursor {
   background-color: white;
+  position: fixed;
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -24,10 +24,7 @@ body {
   pointer-events: none;
   mix-blend-mode: difference;
   transition: top 0.05s, left 0.05s;
-}
-
-a {
-  cursor: none;
+  transform: translate(-50%, -50%);
 }
 
 /*!
