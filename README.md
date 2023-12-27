@@ -5,6 +5,6 @@ to start dev, clone repo
 then run
 ```
 npm install
-npx sass custom.scss assets/bs_css.css --watch
+npx sass custom.scss public/global.css --watch
 npm run start
 ```
