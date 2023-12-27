@@ -10,7 +10,7 @@ import Footer from '../components/Footer.astro';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JY Health</title>
-    <link rel="stylesheet" href="assets/bs_css.css">
+    <link rel="stylesheet" href="public/bs_css.css">
     <style>
         body {
             overflow: auto;
@@ -18,13 +18,15 @@ import Footer from '../components/Footer.astro';
         }
     </style>
 </head>
-<body class="h-100 d-flex flex-column bg-white position-relative">
+<body class="h-100 d-flex flex-column bg-secondary position-relative">
 <!-- <div id="cursor"></div> -->
 <Header />
 
 <!-- body -->
-<div class="container d-flex flex-grow-1 flex-column justify-content-center">
-    <slot/>
+<div class="d-flex flex-grow-1 flex-column justify-content-center bg-white">
+    <div class="container">
+        <slot/>
+    </div>
 </div>
 
 <Footer />
