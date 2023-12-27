@@ -1,43 +1,18 @@
 ---
 interface Props {
     text: string,
-    link: string,
-    imageLink: string
+    link: string
 }
 
-const {text, link, imageLink} = Astro.props;
+const {text, link} = Astro.props;
 ---
-<style>
-    .card-image {
-        height: 50%;
-        /* overflow: hidden; */
-    }
 
-    .card-image img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .mycard {
-        box-sizing: border-box;
-        height: 20vw;
-    }
-
-    .mycard-text {
-        height: 50%;
-    }
-</style>
-<div class="col-10 col-sm-6 col-lg-4 mycard">
-    <div class="card-image">
-        <img src={imageLink}/>
-    </div>
-    <div class="d-flex flex-column justify-content-center mycard-text">
-        <a href={link} class="nav-link">
-            <div class="bg-secondary text-white text-center shadow pe-auto mh">
-                <h5>{text}</h5>
-            </div>
-        </a>
-    </div>
+<div class="col-10 col-sm-6 col-md-4 ">
+    <img src="https://www.jarot.com.au/wp-content/uploads/2021/04/ndis-in-home-care-business-valuation.png" style="width: 100%;"/>
+    <a href={link} class="nav-link">
+        <div class="bg-secondary text-white p-4 p-sm-5 mb-3 h5 text-center shadow pe-auto mh">
+            {text}
+        </div>
+    </a>
 </div>
 

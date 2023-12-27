@@ -26,23 +26,8 @@ body {
   transform: translate(-50%, -50%);
 }
 
-body {
-  min-height: 130vh;
-}
-
 .mh {
-  min-height: 20vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.max-card-height {
-  max-height: 25vh;
-}
-
-.content {
-  flex: 1;
+  min-height: 21vh;
 }
 
 /*!

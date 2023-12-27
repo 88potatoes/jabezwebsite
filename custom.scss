@@ -53,22 +53,11 @@ body {
 }
 
 body {
-  min-height: 130vh;
+  // min-height: 110vh;
 }
 
 .mh {
-  min-height: 20vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.max-card-height {
-  max-height: 25vh
-}
-
-.content {
-  flex: 1;
+  min-height: 21vh;
 }
 
 @import "./node_modules/bootstrap/scss/bootstrap";
