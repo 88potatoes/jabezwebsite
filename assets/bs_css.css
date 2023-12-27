@@ -3,6 +3,7 @@
 html {
   overflow: hidden;
   height: 100%;
+  cursor: none;
 }
 
 body {
@@ -12,6 +13,21 @@ body {
 
 .content_stretch {
   min-height: calc(100vh - 6rem);
+}
+
+#cursor {
+  background-color: white;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  z-index: 50;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  transition: top 0.05s, left 0.05s;
+}
+
+a {
+  cursor: none;
 }
 
 /*!
