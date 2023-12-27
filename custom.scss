@@ -24,7 +24,6 @@ $theme-colors: map-merge($theme-colors, (
 ));
 
 html {
-  overflow:hidden;
   height: 100%;
   // cursor: none;
 
@@ -32,8 +31,8 @@ html {
 }
 
 body {
-    overflow: auto;
-    height: 100%;
+  overflow: auto;
+  min-height: 130vh;
 }
 
 .content_stretch {
@@ -42,7 +41,7 @@ body {
 
 #cursor {
   background-color: white;
-  position: fixed;
+  position: absolute;
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -53,6 +52,13 @@ body {
   transform: translate(-50%, -50%);
 }
 
+body {
+  // min-height: 110vh;
+}
+
+.mh {
+  min-height: 21vh;
+}
 
 @import "./node_modules/bootstrap/scss/bootstrap";
 @import "../node_modules/bootstrap-icons/font/bootstrap-icons.css"
