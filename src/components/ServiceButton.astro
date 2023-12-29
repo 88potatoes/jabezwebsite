@@ -7,10 +7,10 @@ interface Props {
 const {text, link} = Astro.props;
 ---
 
-<div class="col-10 col-sm-6 col-md-4 ">
+<div class="col-10 col-sm-6 col-md-4 cardheight d-flex flex-column">
     <img src="https://www.jarot.com.au/wp-content/uploads/2021/04/ndis-in-home-care-business-valuation.png" style="width: 100%;"/>
-    <a href={link} class="nav-link">
-        <div class="bg-secondary text-white p-4 p-sm-5 mb-3 h5 text-center shadow pe-auto mh">
+    <a href={link} class="nav-link text-grow d-flex flex-column">
+        <div class="bg-secondary text-white h5 text-center shadow p-2 text-grow">
             {text}
         </div>
     </a>

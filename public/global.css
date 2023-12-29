@@ -12,6 +12,16 @@ html {
   min-height: 21vh;
 }
 
+@media screen and (max-width: 575px) {
+  .col-height-sm {
+    height: 300px;
+  }
+}
+.text-grow {
+  display: block;
+  flex: 1;
+}
+
 /*!
  * Bootstrap  v5.3.2 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
@@ -11982,4 +11992,4 @@ textarea.form-control-lg {
   }
 }
 
-/*# sourceMappingURL=bs_css.css.map */
+/*# sourceMappingURL=global.css.map */
