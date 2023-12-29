@@ -54,9 +54,16 @@ body {
 }
 
 .hover-grow {
-  transition: transform 0.3s ease-in;
+  transition: transform 0.15s ease-in;
   &:hover {
     transform: scale(1.02);
+  }
+}
+
+.hover-colour {
+  transition: color 0.1s ease-in;
+  &:hover {
+    color: #c8b0b4 !important;
   }
 }
 
