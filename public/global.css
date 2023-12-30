@@ -15,6 +15,11 @@ html {
   min-height: calc(100vh - 6rem);
 }
 
+@media screen and (max-width: 575px) {
+  .logo-pos {
+    text-align: center;
+  }
+}
 .mh {
   min-height: 21vh;
 }

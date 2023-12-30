@@ -52,6 +52,12 @@ body {
   // min-height: 110vh;
 }
 
+@media screen and (max-width: 575px) {
+  .logo-pos {
+    text-align: center;
+  }
+}
+
 .mh {
   min-height: 21vh;
 }
