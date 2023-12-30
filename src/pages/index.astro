@@ -11,16 +11,18 @@ import NavButton from '../components/NavButton.astro';
 
     <title>JY Support Services</title>
 </head>
-<body class="bg-white h-100 w-100 d-flex flex-column align-items-center justify-content-center position-relative">
-    <div class="w-75 h-75 d-flex bg-secondary flex-column justify-content-center align-items-center shadow container">
-        <NavButton text="Services" />
+<body class="bg-white d-flex flex-column align-items-center justify-content-center position-relative">
+    <div class="d-flex bg-secondary flex-column justify-content-center align-items-center shadow container">
         <h1 class="bg-light shadow">JY</h1>
-        <nav>
+        <NavButton text="Services" />
+        <NavButton text="About" />
+        <NavButton text="Contact" />
+        <!-- <nav>
 
             <div class="bg-light shadow"><a href="/services" class="nav-link"><h2>Services</h2></a></div>
             <div class="bg-light shadow"><a href="/about" class="nav-link"><h2>About</h2></a></div>
             <div class="bg-light shadow"><a href="/contact" class="nav-link"><h2>Contact</h2></a></div>
-        </nav>
+        </nav> -->
 
     </div>
 </body>
