@@ -1,16 +1,17 @@
 ---
 interface Props {
     text: string,
-    link: string
+    link: string,
+    imgLink: string
 }
 
-const {text, link} = Astro.props;
+const {text, link, imgLink} = Astro.props;
 ---
 
 <div class="col-10 col-sm-6 col-md-4 cardheight d-flex flex-column hover-grow mb-1">
     <div class="service-border text-grow d-flex flex-column">
         <a href={link} class="nav-link text-grow d-flex flex-column">
-            <img src="https://www.jarot.com.au/wp-content/uploads/2021/04/ndis-in-home-care-business-valuation.png" style="width: 100%;"/>
+            <img src={imgLink} style="width: 100%;"/>
             <div class="bg-secondary text-dark text-center shadow p-2 text-grow align-items-center">
                 {text}
             </div>
