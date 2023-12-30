@@ -5,13 +5,20 @@
 @import "./node_modules/bootstrap/scss/variables";
 
 $primary: #2b282f;
-$secondary: #3b363e;
+$secondary: #F6E3BA;
 $success: #006600;
 $info: #c8b0b4;
-$light: #f1d5d6;
-$dark: #151417;
+$light: #FFFEF5;
+$dark: #0C0D0D;
 $white: #fcfbfb;
 $enable-shadows: true;
+
+// fonts
+$font-family-base: 'Poppins';
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 600; 
+$headings-font-weight: 500;
 
 $theme-colors: map-merge($theme-colors, (
   "primary": $primary,
@@ -28,6 +35,13 @@ html {
   // cursor: none;
 
 
+}
+
+.service-border {
+  display: block;
+  border: 2px solid $dark;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .content_stretch {
