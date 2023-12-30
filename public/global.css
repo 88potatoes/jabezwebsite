@@ -45,7 +45,7 @@ html {
   transition: color 0.1s ease-in;
 }
 .hover-colour:hover {
-  color: #c8b0b4 !important;
+  color: #514b5a !important;
 }
 
 /*!
@@ -81,7 +81,7 @@ html {
   --bs-primary: #2b282f;
   --bs-secondary: #F6E3BA;
   --bs-success: #006600;
-  --bs-info: #c8b0b4;
+  --bs-info: #514b5a;
   --bs-warning: #ffc107;
   --bs-danger: #dc3545;
   --bs-light: #FFFEF5;
@@ -90,7 +90,7 @@ html {
   --bs-primary-rgb: 43, 40, 47;
   --bs-secondary-rgb: 246, 227, 186;
   --bs-success-rgb: 0, 102, 0;
-  --bs-info-rgb: 200, 176, 180;
+  --bs-info-rgb: 81, 75, 90;
   --bs-warning-rgb: 255, 193, 7;
   --bs-danger-rgb: 220, 53, 69;
   --bs-light-rgb: 255, 254, 245;
@@ -195,7 +195,7 @@ html {
   --bs-primary-text-emphasis: #807e82;
   --bs-secondary-text-emphasis: #faeed6;
   --bs-success-text-emphasis: #66a366;
-  --bs-info-text-emphasis: #ded0d2;
+  --bs-info-text-emphasis: #97939c;
   --bs-warning-text-emphasis: #ffda6a;
   --bs-danger-text-emphasis: #ea868f;
   --bs-light-text-emphasis: #f8f9fa;
@@ -203,7 +203,7 @@ html {
   --bs-primary-bg-subtle: #090809;
   --bs-secondary-bg-subtle: #312d25;
   --bs-success-bg-subtle: #001400;
-  --bs-info-bg-subtle: #282324;
+  --bs-info-bg-subtle: #100f12;
   --bs-warning-bg-subtle: #332701;
   --bs-danger-bg-subtle: #2c0b0e;
   --bs-light-bg-subtle: #343a40;
@@ -211,7 +211,7 @@ html {
   --bs-primary-border-subtle: #1a181c;
   --bs-secondary-border-subtle: #948870;
   --bs-success-border-subtle: #003d00;
-  --bs-info-border-subtle: #786a6c;
+  --bs-info-border-subtle: #312d36;
   --bs-warning-border-subtle: #997404;
   --bs-danger-border-subtle: #842029;
   --bs-light-border-subtle: #495057;
@@ -3076,20 +3076,20 @@ textarea.form-control-lg {
 }
 
 .btn-info {
-  --bs-btn-color: #000;
-  --bs-btn-bg: #c8b0b4;
-  --bs-btn-border-color: #c8b0b4;
-  --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: #d0bcbf;
-  --bs-btn-hover-border-color: #ceb8bc;
-  --bs-btn-focus-shadow-rgb: 170, 150, 153;
-  --bs-btn-active-color: #000;
-  --bs-btn-active-bg: #d3c0c3;
-  --bs-btn-active-border-color: #ceb8bc;
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #514b5a;
+  --bs-btn-border-color: #514b5a;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #45404d;
+  --bs-btn-hover-border-color: #413c48;
+  --bs-btn-focus-shadow-rgb: 107, 102, 115;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #413c48;
+  --bs-btn-active-border-color: #3d3844;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #000;
-  --bs-btn-disabled-bg: #c8b0b4;
-  --bs-btn-disabled-border-color: #c8b0b4;
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #514b5a;
+  --bs-btn-disabled-border-color: #514b5a;
 }
 
 .btn-warning {
@@ -3229,19 +3229,19 @@ textarea.form-control-lg {
 }
 
 .btn-outline-info {
-  --bs-btn-color: #c8b0b4;
-  --bs-btn-border-color: #c8b0b4;
-  --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: #c8b0b4;
-  --bs-btn-hover-border-color: #c8b0b4;
-  --bs-btn-focus-shadow-rgb: 200, 176, 180;
-  --bs-btn-active-color: #000;
-  --bs-btn-active-bg: #c8b0b4;
-  --bs-btn-active-border-color: #c8b0b4;
+  --bs-btn-color: #514b5a;
+  --bs-btn-border-color: #514b5a;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #514b5a;
+  --bs-btn-hover-border-color: #514b5a;
+  --bs-btn-focus-shadow-rgb: 81, 75, 90;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #514b5a;
+  --bs-btn-active-border-color: #514b5a;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #c8b0b4;
+  --bs-btn-disabled-color: #514b5a;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #c8b0b4;
+  --bs-btn-disabled-border-color: #514b5a;
   --bs-gradient: none;
 }
 
@@ -6912,7 +6912,7 @@ textarea.form-control-lg {
 }
 
 .text-bg-info {
-  color: #000 !important;
+  color: #fff !important;
   background-color: RGBA(var(--bs-info-rgb), var(--bs-bg-opacity, 1)) !important;
 }
 
@@ -6973,8 +6973,8 @@ textarea.form-control-lg {
   text-decoration-color: RGBA(var(--bs-info-rgb), var(--bs-link-underline-opacity, 1)) !important;
 }
 .link-info:hover, .link-info:focus {
-  color: RGBA(211, 192, 195, var(--bs-link-opacity, 1)) !important;
-  text-decoration-color: RGBA(211, 192, 195, var(--bs-link-underline-opacity, 1)) !important;
+  color: RGBA(65, 60, 72, var(--bs-link-opacity, 1)) !important;
+  text-decoration-color: RGBA(65, 60, 72, var(--bs-link-underline-opacity, 1)) !important;
 }
 
 .link-warning {
