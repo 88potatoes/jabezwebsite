@@ -1,10 +1,10 @@
 ---
 
-const {text} = Astro.props;
+const {text, link} = Astro.props;
 ---
 <div class="row justify-content-center">
     <div class="col-7 col-sm-5 col-lg-4">
-        <a class="nav-link" href="/services">
+        <a class="nav-link" href={link}>
 
             <div class="bg-primary text-white p-3 mb-3 rounded text-center shadow hover-colour">
                 {text}
