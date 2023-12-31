@@ -7,23 +7,31 @@ import NavButton from '../components/NavButton.astro';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="global.css"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <title>JY Support Services</title>
 </head>
-<body class="bg-white d-flex flex-column align-items-center justify-content-center position-relative">
-    <div class="d-flex bg-secondary flex-column justify-content-center align-items-center shadow container">
-        <h1 class="bg-light shadow">JY</h1>
-        <NavButton text="Services" link="services"/>
-        <NavButton text="About" link="about"/>
-        <NavButton text="Contact" link="contact"/>
-        <!-- <nav>
+<body class="bg-white h-100 d-flex flex-column align-items-center justify-content-center position-relative">
+    <div class="h-75 w-75 container bg-secondary shadow d-flex flex-column justify-content-center rounded">
+        <div class="row">
+            <div class="col">
+                <div class="col">
+                    <a href="/" class="nav-link text-white d-flex justify-content-center mb-3">
+                        <svg width="100px" height="70px" viewBox="0 20 100 70">
+                            <image xlink:href="public/JY1.svg" width="100" style="background: none;"/>
+                        </svg>
+                    </a>
+                </div>
 
-            <div class="bg-light shadow"><a href="/services" class="nav-link"><h2>Services</h2></a></div>
-            <div class="bg-light shadow"><a href="/about" class="nav-link"><h2>About</h2></a></div>
-            <div class="bg-light shadow"><a href="/contact" class="nav-link"><h2>Contact</h2></a></div>
-        </nav> -->
-
+                <NavButton text="Services" link="services"/>
+                <NavButton text="About" link="about"/>
+                <NavButton text="Contact" link="contact"/>
+                
+            </div>
+        </div>
     </div>
 </body>
 </html>
