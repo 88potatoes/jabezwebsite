@@ -1,1 +1,0 @@
-import"https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js";const e=document.getElementById("cursor");console.log(e);window.addEventListener("mousemove",t=>{window.requestAnimationFrame(()=>{e.style.left=`${t.clientX}px`,e.style.top=`${t.clientY}px`})});

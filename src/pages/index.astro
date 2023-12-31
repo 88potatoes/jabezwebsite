@@ -1,6 +1,7 @@
 ---
 import '../../public/global.css'
 import NavButton from '../components/NavButton.astro';
+import logo1 from '../../public/JY1.svg';
 ---
 <!DOCTYPE html>
 <html lang="en" class="h-100 w-100">
@@ -21,7 +22,7 @@ import NavButton from '../components/NavButton.astro';
                 <div class="col">
                     <a href="/" class="nav-link text-white d-flex justify-content-center mb-3">
                         <svg width="100px" height="70px" viewBox="0 20 100 70">
-                            <image xlink:href="public/JY1.svg" width="100" style="background: none;"/>
+                            <image xlink:href={logo1.src} width="100" style="background: none;"/>
                         </svg>
                     </a>
                 </div>
