@@ -1,28 +1,20 @@
 ---
-import NavButton from "../components/NavButton.astro";
-import MainLayout from "../layouts/MainLayout.astro"
+import ArticleLayout from "../layouts/ArticleLayout.astro";
 ---
 
 
-<MainLayout>
-    <div class="row text-center m-2">
-        <h1>Daily Living Supports</h1>
-    </div>
-    <div class="row justify-content-center">
-        <!-- <img class="col-lg-7 col-md-8 col-sm-10 mb-4" src="https://disabilityplanservices.com.au/wp-content/uploads/2020/05/NDIS-therapeutic-supports-scaled.jpeg" alt="disable child having fun"> -->
-    </div>
-    <div class="row justify-content-center m-2">
-        <div class="col-lg-9 col-md-10 col-11">
-        <p>Daily living supports encompass assistance with personal care, grooming, dressing, meal preparation, and household tasks to promote independence.</p>
-        <h3>How you can help</h3>
+<ArticleLayout>
+    <Fragment slot="title">Daily Living Supports</Fragment>
+    <Fragment slot="subtitle">Support right for you</Fragment>
+    <Fragment slot="service-info">
+        Daily living supports encompass assistance with personal care, grooming, dressing, meal preparation, and household tasks to promote independence.    
+    </Fragment>
+    <Fragment slot="help-list">
         <ul>
             <li> Provide skilled and compassionate personal care services. </li>
             <li> Offer support with meal planning, preparation, and dietary requirements. </li>
             <li> Assist with daily tasks, enabling individuals to live comfortably and maintain their homes. </li>
             <li> Tailor services to the specific needs and preferences of each participant. </li>
         </ul>
-        </div>
-    </div>
-
-    <NavButton text="Contact Us" link="contact">
-</MainLayout>
+    </Fragment>
+</ArticleLayout>

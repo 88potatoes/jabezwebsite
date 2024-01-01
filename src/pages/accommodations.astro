@@ -1,29 +1,20 @@
 ---
-import NavButton from "../components/NavButton.astro";
-import MainLayout from "../layouts/MainLayout.astro"
+import ArticleLayout from "../layouts/ArticleLayout.astro";
 ---
 
 
-<MainLayout>
-    <div class="row text-center m-2">
-        <h1>Accommodation and Tenancy Support</h1>
-    </div>
-    <div class="row justify-content-center">
-        <!-- <img class="col-lg-7 col-md-8 col-sm-10 mb-4" src="https://disabilityplanservices.com.au/wp-content/uploads/2020/05/NDIS-therapeutic-supports-scaled.jpeg" alt="disable child having fun"> -->
-    </div>
-    <div class="row justify-content-center m-2">
-        <div class="col-lg-9 col-md-10 col-11">
-        <p>This service involves assisting participants in finding suitable accommodation and providing support to maintain their tenancy. </p>
-        
-        <h3>How you can help</h3>
+<ArticleLayout>
+    <Fragment slot="title">Accommodation and Tenancy Support</Fragment>
+    <Fragment slot="subtitle">Support right for you</Fragment>
+    <Fragment slot="service-info">
+        This service involves assisting participants in finding suitable accommodation and providing support to maintain their tenancy.
+    </Fragment>
+    <Fragment slot="help-list">
         <ul>
             <li>       Aid in the search for appropriate housing options.</li>
             <li>  Offer guidance on budgeting and financial management related to accommodation.</li>
             <li>     Provide ongoing support to maintain a secure and stable living environment.</li>
             <li>   Advocate for necessary accommodations or modifications.</li>
         </ul>
-        </div>
-    </div>
-
-    <NavButton text="Contact Us" link="contact">
-</MainLayout>
+    </Fragment>
+</ArticleLayout>

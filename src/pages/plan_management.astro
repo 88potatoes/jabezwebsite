@@ -1,29 +1,20 @@
 ---
-import NavButton from "../components/NavButton.astro";
-import MainLayout from "../layouts/MainLayout.astro"
+import ArticleLayout from "../layouts/ArticleLayout.astro";
 ---
 
 
-<MainLayout>
-    <div class="row text-center m-2">
-        <h1>Plan Management</h1>
-    </div>
-    <div class="row justify-content-center">
-        <!-- <img class="col-lg-7 col-md-8 col-sm-10 mb-4" src="https://disabilityplanservices.com.au/wp-content/uploads/2020/05/NDIS-therapeutic-supports-scaled.jpeg" alt="disable child having fun"> -->
-    </div>
-    <div class="row justify-content-center m-2">
-        <div class="col-lg-9 col-md-10 col-11">
-        <p> Plan management involves assisting participants in managing their NDIS budgets, processing invoices, and tracking expenditure.</p>
-        
-        <h3>How you can help</h3>
+<ArticleLayout>
+    <Fragment slot="title">Plan Management</Fragment>
+    <Fragment slot="subtitle">Support right for you</Fragment>
+    <Fragment slot="service-info">
+        Plan management involves assisting participants in managing their NDIS budgets, processing invoices, and tracking expenditure.
+    </Fragment>
+    <Fragment slot="help-list">
         <ul>
             <li>        Handle financial transactions and paperwork efficiently.</li>
             <li>         Provide regular updates on budget utilization and remaining funds.</li>
             <li>       Offer guidance on maximizing the benefits of the NDIS plan.</li>
             <li>         Streamline administrative tasks to alleviate stress for participants.</li>
         </ul>
-        </div>
-    </div>
-
-    <NavButton text="Contact Us" link="contact">
-</MainLayout>
+    </Fragment>
+</ArticleLayout>
