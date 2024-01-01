@@ -1,28 +1,21 @@
 ---
 import NavButton from "../components/NavButton.astro";
-import MainLayout from "../layouts/MainLayout.astro"
+import ArticleLayout from "../layouts/ArticleLayout.astro";
 ---
 
 
-<MainLayout>
+<ArticleLayout>
     <Fragment slot="title">Support Coordination</Fragment>
     <Fragment slot="subtitle">Support right for you</Fragment>
-
-    <div class="row justify-content-center">
-        <!-- <img class="col-lg-7 col-md-8 col-sm-10 mb-4" src="https://disabilityplanservices.com.au/wp-content/uploads/2020/05/NDIS-therapeutic-supports-scaled.jpeg" alt="disable child having fun"> -->
-    </div>
-    <div class="row justify-content-center m-2">
-        <div class="col-lg-9 col-md-10 col-11">
-        <p>Support coordination involves helping participants navigate and implement their NDIS plans. This includes understanding the plan, connecting with service providers, and ensuring that the funded supports align with the participant's goals.</p>
-        <h3>How you can help</h3>
+    <Fragment slot="service-info">
+        Support coordination involves helping participants navigate and implement their NDIS plans. This includes understanding the plan, connecting with service providers, and ensuring that the funded supports align with the participant's goals.
+    </Fragment>
+    <Fragment slot="help-list">
         <ul>
             <li>Provide clear explanations of the NDIS plan details.</li>
             <li>Facilitate communication between the participant and various service providers.</li>
             <li>Work collaboratively to implement and review the plan regularly.</li>
             <li>Advocate for the participant's needs within the NDIS framework.</li>
         </ul>
-        </div>
-    </div>
-
-    <NavButton text="Contact Us" link="contact">
-</MainLayout>
+    </Fragment>
+</ArticleLayout>

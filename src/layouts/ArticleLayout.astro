@@ -1,22 +1,45 @@
 ---
+import NavButton from "../components/NavButton.astro";
 import MainLayout from "./MainLayout.astro";
-
 ---
 
 <MainLayout>
-    <div class="container-fluid bg-dark">
+    
+    <div class="container-fluid bg-dark" slot="title-banner">
         <div class="container text-center">
             <h1 class="text-white mt-4 mb-4">
                 <slot name="title"/>
             </h1>
         </div>
     </div>
-    <div class="container-fluid bg-success text-center">
+    <div class="container-fluid bg-success text-center" slot="subtitle-banner">
         <div class="container">
             <h3 class="text-white mt-3 mb-3">
                 <slot name="subtitle"/>
             </h3>
         </div>
     </div>
-    <slot/>
+    
+    <div class="row justify-content-center m-2">
+        
+        <div class="col-lg-9 col-md-10 col-11">
+            <div class="row align-items-center">
+                <div class="col">
+                    <img class="shadow" src="https://disabilityplanservices.com.au/wp-content/uploads/2020/12/NDIS-support-coordination.jpg" width="100%">
+                </div>
+                <div class="col">
+                    <p><slot name="service-info"/></p>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col">
+                    <div class="row text-center">
+                        <h3>How we can help</h3>
+                    </div>
+                    <slot name="help-list">
+                </div>
+            </div>
+        </div>
+    </div>
+    <NavButton text="Contact Us" link="contact"/>
 </MainLayout>

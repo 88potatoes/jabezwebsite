@@ -28,8 +28,9 @@ import '../../public/global.css'
 
 <!-- body -->
 <slot name="custom-header"/>
-
 <div class="d-flex flex-grow-1 flex-column bg-white body-size">
+    <slot name="title-banner"/>
+    <slot name="subtitle-banner"/>
     <div class="container mb-4 mt-4">
         <slot/>
     </div>

@@ -4,13 +4,13 @@ import MainLayout from "../layouts/MainLayout.astro"
 ---
 
 <MainLayout>
-    <div class="row">
-        <div class="col">
-            <div class="p-3 text-center">
-                <h1>About Us</h1>
-            </div>
+    <div slot="custom-header" class="banner">
+        <div class="container h-100 d-flex flex-column justify-content-center">
+            <h1 class="text-white w-50">About Us</h1>
+            <h4 class="text-white w-50">What we do that makes us special</h4>
         </div>
     </div>
+    
     <div class="row justify-content-center mb-3">
         <div class="col-11 col-lg-7">
             <p>At JY Support Services, we are a dedicated disability support provider committed to enriching the lives of individuals with disabilities. With a foundation rooted in compassion and inclusivity, our mission is to empower those we serve to achieve greater independence and fulfillment. 
