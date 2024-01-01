@@ -3,13 +3,58 @@ import '../../public/global.css'
 import NavButton from '../components/NavButton.astro';
 import logo1 from '../../public/JY1.svg';
 import MainLayout from '../layouts/MainLayout.astro';
+import ServiceIcon from '../components/ServiceIcon.astro';
 ---
 
 <MainLayout>
     <div slot="custom-header" class="banner">
-        <div class="container h-100 d-flex flex-column justify-content-center">
+        <div class="container h-100 d-flex flex-column justify-content-center p-4">
             <h1 class="text-white w-50">Get accredited NDIS Support</h1>
             <h4 class="text-white w-50">Empowering you to achieve</h4>
+        </div>
+    </div>
+    <div class="row justify-content-center p-4 bg-white">
+        <div class="col-10">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <h1>Who we are</h1>
+                        <h4>Your community-trusted NDIS support service</h4>
+                        <p class="text">
+                            Welcome to JY support, your trusted NDIS support provider. With a focus on personalized care and unwavering dedication, we empower individuals with disabilities to live fulfilling lives. Our commitment to reliability, transparency, and innovation ensures tailored support that fosters independence and inclusion within communities. Join us in shaping a more supportive future for all.
+                        </p>
+                    </div>
+                    <div class="col-6 align-items-center justify-content-center">
+                        <img src="https://www.divinesupportservices.com.au/wp-content/uploads/2023/06/care2.jpg" alt="disabled person"
+                        class="img-front">
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <NavButton text="More About Us" link="/about">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row bg-secondary justify-content-center mt-4">
+        <div class="col-10">
+            <div class="container">
+                <h1>Our services</h1>
+                <p class="text">Our disability support services offer comprehensive care, tailored to individual needs, ensuring every person receives the attention and assistance they require to thrive. From daily living support to specialized therapies, our services are designed to empower and enhance the lives of individuals with disabilities.</p>
+            </div>
+            <div class="row">
+                <ServiceIcon text="Support Coordination" link="https://www.svgrepo.com/show/523458/health.svg"/>
+            </div>
+        </div>
+        <NavButton text="See Our Services" link="/services">
+    </div>
+    <div class="row bg-white justify-content-center pt-4">
+        <div class="col-10">
+            <div class="container">
+                <h1>Hear from our community</h1>
+                <p class="text">
+                    Our NDIS support service community stands as a unified network, dedicated to advocating for and uplifting individuals with disabilities. Through collaboration and shared expertise, we create an inclusive environment where everyone's unique needs are met with compassion and understanding
+                </p>
+            </div>
         </div>
     </div>
 </MainLayout>

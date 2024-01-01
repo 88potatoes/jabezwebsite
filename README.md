@@ -1,4 +1,4 @@
-website link: https://88potatoes.github.io/jabezwebsite/base.html
+website link: https://celebrated-peony-f7efb9.netlify.app/
 
 to start dev, clone repo
 
