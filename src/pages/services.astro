@@ -4,8 +4,13 @@ import ServiceButton from "../components/ServiceButton.astro";
 ---
 
 <MainLayout>
-<div class="col-sm-8">
-    <p>Our team of dedicated caretakers are always on standby to give you the support you need.</p>
+<Fragment slot="title">Services</Fragment>
+<Fragment slot="subtitle">Get help tailored to you</Fragment>
+
+<div class="row d-flex flex-col justify-content-center mb-2">
+    <div class="col-8 col-lg-5">
+        <p>Our team of dedicated caretakers always aim to provide services that empower you to achieve your goals.</p>
+    </div>
 </div>
 <div class="row justify-content-center g-3 mb-3">
     <ServiceButton text="Support Coordination" link="/support_coordination" imgLink="https://www.jarot.com.au/wp-content/uploads/2021/04/ndis-in-home-care-business-valuation.png"/>

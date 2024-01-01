@@ -27,18 +27,9 @@ import '../../public/global.css'
 <Header />
 
 <!-- body -->
-<div class="d-flex flex-grow-1 flex-column justify-content-center bg-white body-size">
-    <div class="container-fluid bg-dark">
-        <div class="container text-center">
-            <h1 class="text-white mt-4 mb-4">Our services</h1>
-        </div>
-    </div>
-    <div class="container-fluid bg-success text-center">
-        <div class="container">
-            <h3 class="text-white mt-3 mb-3">Get help right for you</h3>
-        </div>
-    </div>
+<slot name="custom-header"/>
 
+<div class="d-flex flex-grow-1 flex-column bg-white body-size">
     <div class="container mb-4 mt-4">
         <slot/>
     </div>

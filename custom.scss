@@ -10,7 +10,7 @@ $success: #323355;
 $info: #514b5a;
 $light: #ad7ca8;
 $dark: #494169;
-$white: #fff1fd;
+$white: #fff3fd;
 $enable-shadows: true;
 
 // fonts
@@ -48,10 +48,6 @@ html {
   min-height: calc(100vh - 6rem);
 }
 
-body {
-  // min-height: 110vh;
-}
-
 @media screen and (max-width: 575px) {
   .logo-pos {
     text-align: center;
@@ -84,6 +80,36 @@ body {
   transition: color 0.1s ease-in;
   &:hover {
     color: $info !important;
+  }
+}
+
+
+
+.banner {
+  width: 100vw;
+  background: url("https://signalcare.com.au/wp-content/uploads/2022/08/NDIS-Support-Coordination-Signal-Care-second.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 50vh;
+  position: relative;
+  z-index: 1;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    background-color: #000;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    z-index: -1;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  .banner {
+    background-attachment: fixed;
   }
 }
 

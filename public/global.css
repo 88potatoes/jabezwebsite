@@ -48,6 +48,32 @@ html {
   color: #514b5a !important;
 }
 
+.banner {
+  width: 100vw;
+  background: url("https://signalcare.com.au/wp-content/uploads/2022/08/NDIS-Support-Coordination-Signal-Care-second.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 50vh;
+  position: relative;
+  z-index: 1;
+}
+.banner::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #000;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+@media screen and (min-width: 64rem) {
+  .banner {
+    background-attachment: fixed;
+  }
+}
 /*!
  * Bootstrap  v5.3.2 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
@@ -86,7 +112,7 @@ html {
   --bs-danger: #dc3545;
   --bs-light: #ad7ca8;
   --bs-dark: #494169;
-  --bs-white: #fff1fd;
+  --bs-white: #fff3fd;
   --bs-primary-rgb: 43, 40, 47;
   --bs-secondary-rgb: 255, 217, 239;
   --bs-success-rgb: 50, 51, 85;
@@ -95,7 +121,7 @@ html {
   --bs-danger-rgb: 220, 53, 69;
   --bs-light-rgb: 173, 124, 168;
   --bs-dark-rgb: 73, 65, 105;
-  --bs-white-rgb: 255, 241, 253;
+  --bs-white-rgb: 255, 243, 253;
   --bs-primary-text-emphasis: #052c65;
   --bs-secondary-text-emphasis: #2b2f32;
   --bs-success-text-emphasis: #0a3622;
@@ -120,7 +146,7 @@ html {
   --bs-danger-border-subtle: #f1aeb5;
   --bs-light-border-subtle: #e9ecef;
   --bs-dark-border-subtle: #adb5bd;
-  --bs-white-rgb: 255, 241, 253;
+  --bs-white-rgb: 255, 243, 253;
   --bs-black-rgb: 0, 0, 0;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -182,8 +208,8 @@ html {
   --bs-body-color-rgb: 222, 226, 230;
   --bs-body-bg: #212529;
   --bs-body-bg-rgb: 33, 37, 41;
-  --bs-emphasis-color: #fff1fd;
-  --bs-emphasis-color-rgb: 255, 241, 253;
+  --bs-emphasis-color: #fff3fd;
+  --bs-emphasis-color-rgb: 255, 243, 253;
   --bs-secondary-color: rgba(222, 226, 230, 0.75);
   --bs-secondary-color-rgb: 222, 226, 230;
   --bs-secondary-bg: #343a40;
@@ -225,7 +251,7 @@ html {
   --bs-highlight-color: #dee2e6;
   --bs-highlight-bg: #664d03;
   --bs-border-color: #495057;
-  --bs-border-color-translucent: rgba(255, 241, 253, 0.15);
+  --bs-border-color-translucent: rgba(255, 243, 253, 0.15);
   --bs-form-valid-color: #75b798;
   --bs-form-valid-border-color: #75b798;
   --bs-form-invalid-color: #ea868f;
@@ -2496,7 +2522,7 @@ textarea.form-control-lg {
 }
 
 [data-bs-theme=dark] .form-switch .form-check-input:not(:checked):not(:focus) {
-  --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%28255, 241, 253, 0.25%29'/%3e%3c/svg%3e");
+  --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%28255, 243, 253, 0.25%29'/%3e%3c/svg%3e");
 }
 
 .form-range {
@@ -3162,19 +3188,19 @@ textarea.form-control-lg {
 
 .btn-white {
   --bs-btn-color: #000;
-  --bs-btn-bg: #fff1fd;
-  --bs-btn-border-color: #fff1fd;
+  --bs-btn-bg: #fff3fd;
+  --bs-btn-border-color: #fff3fd;
   --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: #fff3fd;
-  --bs-btn-hover-border-color: #fff2fd;
-  --bs-btn-focus-shadow-rgb: 217, 205, 215;
+  --bs-btn-hover-bg: #fff5fd;
+  --bs-btn-hover-border-color: #fff4fd;
+  --bs-btn-focus-shadow-rgb: 217, 207, 215;
   --bs-btn-active-color: #000;
-  --bs-btn-active-bg: #fff4fd;
-  --bs-btn-active-border-color: #fff2fd;
+  --bs-btn-active-bg: #fff5fd;
+  --bs-btn-active-border-color: #fff4fd;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #000;
-  --bs-btn-disabled-bg: #fff1fd;
-  --bs-btn-disabled-border-color: #fff1fd;
+  --bs-btn-disabled-bg: #fff3fd;
+  --bs-btn-disabled-border-color: #fff3fd;
 }
 
 .btn-outline-primary {
@@ -3314,19 +3340,19 @@ textarea.form-control-lg {
 }
 
 .btn-outline-white {
-  --bs-btn-color: #fff1fd;
-  --bs-btn-border-color: #fff1fd;
+  --bs-btn-color: #fff3fd;
+  --bs-btn-border-color: #fff3fd;
   --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: #fff1fd;
-  --bs-btn-hover-border-color: #fff1fd;
-  --bs-btn-focus-shadow-rgb: 255, 241, 253;
+  --bs-btn-hover-bg: #fff3fd;
+  --bs-btn-hover-border-color: #fff3fd;
+  --bs-btn-focus-shadow-rgb: 255, 243, 253;
   --bs-btn-active-color: #000;
-  --bs-btn-active-bg: #fff1fd;
-  --bs-btn-active-border-color: #fff1fd;
+  --bs-btn-active-bg: #fff3fd;
+  --bs-btn-active-border-color: #fff3fd;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #fff1fd;
+  --bs-btn-disabled-color: #fff3fd;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #fff1fd;
+  --bs-btn-disabled-border-color: #fff3fd;
   --bs-gradient: none;
 }
 
@@ -5021,7 +5047,7 @@ textarea.form-control-lg {
 }
 
 .progress-bar-striped {
-  background-image: linear-gradient(45deg, rgba(255, 241, 253, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 241, 253, 0.15) 50%, rgba(255, 241, 253, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 243, 253, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 243, 253, 0.15) 50%, rgba(255, 243, 253, 0.15) 75%, transparent 75%, transparent);
   background-size: var(--bs-progress-height) var(--bs-progress-height);
 }
 
@@ -7018,8 +7044,8 @@ textarea.form-control-lg {
   text-decoration-color: RGBA(var(--bs-white-rgb), var(--bs-link-underline-opacity, 1)) !important;
 }
 .link-white:hover, .link-white:focus {
-  color: RGBA(255, 244, 253, var(--bs-link-opacity, 1)) !important;
-  text-decoration-color: RGBA(255, 244, 253, var(--bs-link-underline-opacity, 1)) !important;
+  color: RGBA(255, 245, 253, var(--bs-link-opacity, 1)) !important;
+  text-decoration-color: RGBA(255, 245, 253, var(--bs-link-underline-opacity, 1)) !important;
 }
 
 .link-body-emphasis {
@@ -8595,7 +8621,7 @@ textarea.form-control-lg {
 
 .text-white-50 {
   --bs-text-opacity: 1;
-  color: rgba(255, 241, 253, 0.5) !important;
+  color: rgba(255, 243, 253, 0.5) !important;
 }
 
 .text-body-secondary {
