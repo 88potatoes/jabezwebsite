@@ -69,6 +69,10 @@ html {
   z-index: -1;
 }
 
+.text {
+  font-size: 1.1rem;
+}
+
 @media screen and (min-width: 64rem) {
   .banner {
     background-attachment: fixed;
