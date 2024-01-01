@@ -2,37 +2,14 @@
 import '../../public/global.css'
 import NavButton from '../components/NavButton.astro';
 import logo1 from '../../public/JY1.svg';
+import MainLayout from '../layouts/MainLayout.astro';
 ---
-<!DOCTYPE html>
-<html lang="en" class="h-100 w-100">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-    <title>JY Support Services</title>
-</head>
-<body class="bg-white h-100 d-flex flex-column align-items-center justify-content-center position-relative">
-    <div class="h-75 w-75 container bg-secondary shadow d-flex flex-column justify-content-center rounded">
-        <div class="row">
-            <div class="col">
-                <div class="col">
-                    <a href="/" class="nav-link text-white d-flex justify-content-center mb-3">
-                        <svg width="100px" height="70px" viewBox="0 20 100 70">
-                            <image xlink:href={logo1.src} width="100" style="background: none;"/>
-                        </svg>
-                    </a>
-                </div>
-
-                <NavButton text="Services" link="services"/>
-                <NavButton text="About" link="about"/>
-                <NavButton text="Contact" link="contact"/>
-                
-            </div>
+<MainLayout>
+    <div slot="custom-header" class="banner">
+        <div class="container h-100 d-flex flex-column justify-content-center">
+            <h1 class="text-white w-50">Get accredited NDIS Support</h1>
+            <h4 class="text-white w-50">Empowering you to achieve</h4>
         </div>
     </div>
-</body>
-</html>
+</MainLayout>
