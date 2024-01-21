@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us | Sable Support Services</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        
+        <!-- use js to validate all the fields in the form -->
+        <!-- remove comments when validation is complete -->
+        <form method="POST">
+            <input type="text" placeholder="First name" required>
+            <input type="text" placeholder="Last name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message" required></textarea>
+
+            <input type="checkbox" id="requestServicesCheckbox">
+            <label for="requestServicesCheckbox">Request Services</label>
+
+            <div id="requestServicesForm" hidden="hidden">
+                <h2>Is this for yourself?</h2>
+                <input type="radio" id="isThisForYourselfYesRadio" name="isThisForYourselfRadio">
+                <label for="isThisForYourselfYesRadio">Yes</label>
+                <input type="radio" id="isThisForYourselfNoRadio" name="isThisForYourselfRadio">
+                <label for="isThisForYourselfNoRadio">No</label>
+
+                <h2>Primary Disability</h2>
+                <input type="text">
+                
+                <h2>Secondary Disability</h2>
+                <input type="text">
+
+                <h2>Additional diagnoses/conditions</h2>
+                <input type="text">
+
+                <h2>Date of birth</h2>
+                <input type="date" required>
+
+                <h2>Mobile Number</h2>
+                <input required>
+
+                <h2>Contact method</h2>
+                <input type="checkbox" id="contactMethodPhone">
+                <label for="contactMethodPhone">Phone call</label>
+                <input type="checkbox" id="contactMethodSms">
+                <label for="contactMethodSms">SMS Text</label>
+                <input type="checkbox" id="contactMethodEmail">
+                <label for="contactMethodEmail">Email</label>
+
+                <h2>Address</h2>
+                <input type="text" id="address">
+                <h2>Suburb</h2>
+                <input type="text" id="suburb">
+                <h2>Postcode</h2>
+                <input id="postcode">
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
+
+<script src="../script.js"></script>
